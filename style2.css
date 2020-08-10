@@ -1,0 +1,30 @@
+.header {
+  height: 200px;
+  background: url("https://media.istockphoto.com/photos/blue-abstract-background-or-texture-picture-id1138395421?k=6&m=1138395421&s=612x612&w=0&h=bJ1SRWujCgg3QWzkGPgaRiArNYohPl7-Wc4p_Fa_cyA=")
+    no-repeat;
+  background-size: cover;
+}
+.menu {
+  background-color: white;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border: 0.5px solid #d8d7d7;
+}
+.cv {
+  color: rgb(68, 76, 194);
+  font-family: "MuseoModerno", cursive;
+  float: left;
+  margin-bottom: 20px;
+  padding-left: 30px;
+}
+.home {
+  margin: 10px;
+  float: left;
+  font-family: "Balsamiq Sans", cursive;
+  color: rgb(68, 76, 194);
+  margin-top: 20px;
+  padding-right: 30px;
+  list-style: none;
+}
