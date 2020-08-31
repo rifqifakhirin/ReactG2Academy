@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+    <title>Login</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .body-atas {
+        background-color: #1a568d;
+        font-family: "Open Sans", sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        margin: 0;
+        text-align: center;
+        }
+      .header {
+	    border-bottom: 1px solid #f0f0f0;
+	    background-color: #e4e4e4;
+	    padding: 20px 20px;
+        }
+        .header h2 {
+	    margin: 0;
+        }       
+        .form {
+	    padding: 30px 20px;	
+        }
+        .form-control {
+	    margin-bottom: 10px;
+	    padding-bottom: 10px;
+	    position: relative;
+        }
+        label {
+            color: cornsilk;
+        }
+
+
+      #pesan {
+        display: none;
+        background: rgb(162, 202, 240);
+        color: #000;
+        position: relative;
+        padding: 10px;
+        margin-top: 0;
+        text-align: center;
+
+      }
+      #pesan p {
+        padding: 1px 5px;
+        font-size: 18px;
+      }
+      .valid {
+        color: green;
+      }
+      .valid:before {
+        position: relative;
+        left: -8px;
+        content: "sudah berisi";
+      }
+      .invalid {
+        color: red;
+      }
+      .invalid:before {
+        position: relative;
+        left: -8px;
+        content: "belum berisi";
+      }
+      a {
+          color: black;
+          text-decoration: none;
+          /* border: 1 px solid rgb(162, 202, 240);          
+          background-color:rgb(162, 202, 240); */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="body-atas">
+        <div class="container">
+            <div class="header">
+                <h1>Login to HRD Tools</h1>
+            </div>
+            <form id="form" class="form">
+                <div class="form-control">
+                    <label for="username">Username:</label>
+                    </br> 
+                    <input type="text" id="username" placeholder="username" required/>
+                    </br>
+                    <label for="password">Password:</label>
+                    </br>
+                    <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="ketik di sini"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W+).{8,}"
+                    title="Harus berjumlah minimal delapan karakter, 
+                    terdapat minimal sebuah huruf kecil, sebuah huruf besar, 
+                    sebuah angka dan sebuah karakter spesial
+                    "
+                    required/>
+                    </br>
+                    <div id="verifikasi">
+                        <button onclick="loginHRD(event)" >Verifikasi</button>                        
+                    </div>
+                </div>
+            </form>
+            <!-- <a href="./index.html">k</a> -->
+        </div>
+        <br>                
+    </div>
+    <div class="body-bawah">
+        <div id="pesan">
+            <h3>Password yang anda ketik saat ini:</h3>
+            <p id="letter" class="invalid">sebuah huruf kecil</p>
+            <p id="capital" class="invalid">sebuah huruf besar</p>
+            <p id="number" class="invalid">sebuah angka</p>
+            <p id="length" class="invalid">minimal 8 karakter</p>
+            <p id="special" class="invalid">sebuah spesial karakter</p>
+          </div>
+  
+    </div>
+    <script>
+      var myInput = document.getElementById("password");
+      var letter = document.getElementById("letter");
+      var capital = document.getElementById("capital");
+      var number = document.getElementById("number");
+      var length = document.getElementById("length");
+      var special = document.getElementById("special");
+
+      myInput.onfocus = function () {
+        document.getElementById("pesan").style.display = "block";
+      };
+      myInput.onblur = function () {
+        document.getElementById("pesan").style.display = "none";
+      };
+
+      myInput.onkeyup = function () {
+        var lowerCaseLetters = /[a-z]/g;
+        if (myInput.value.match(lowerCaseLetters)) {
+          letter.classList.remove("invalid");
+          letter.classList.add("valid");
+        } else {
+          letter.classList.remove("valid");
+          letter.classList.add("invalid");
+        }
+
+        var upperCaseLetters = /[A-Z]/g;
+        if (myInput.value.match(upperCaseLetters)) {
+          capital.classList.remove("invalid");
+          capital.classList.add("valid");
+        } else {
+          capital.classList.remove("valid");
+          capital.classList.add("invalid");
+        }
+
+        var numbers = /[0-9]/g;
+        if (myInput.value.match(numbers)) {
+          number.classList.remove("invalid");
+          number.classList.add("valid");
+        } else {
+          number.classList.remove("valid");
+          number.classList.add("invalid");
+        }
+
+        var specialCharacters = /[^a-zA-Z0-9]/g;
+        if (myInput.value.match(specialCharacters)) {
+          special.classList.remove("invalid");
+          special.classList.add("valid");
+        } else {
+          special.classList.remove("valid");
+          special.classList.add("invalid");
+        }
+
+        if (myInput.value.length >= 8) {
+          length.classList.remove("invalid");
+          length.classList.add("valid");
+        } else {
+          length.classList.remove("valid");
+          length.classList.add("invalid");
+        }
+      };
+
+      function loginHRD (event) {  
+          event.preventDefault();        
+          let un = document.getElementById("username").value;
+          let pw = document.getElementById("password").value;
+          if ( un == "rifqifakhirin" && pw == "Majuterus45!") {             
+            
+            location.href = "/day03_2_tugasrumah/index.html";
+
+          } else {return false};          
+      }
+    </script>
+  </body>
+</html>

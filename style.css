@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  background-color: #1a568d;
+}
+.left-header,
+.right-header {
+  width: 14.5%;
+}
+.menuNav {
+  width: 14.2%;
+  text-align: center;
+  padding-top: 20px;
+  font-family: "Roboto", sans-serif;
+  color: cornsilk;
+}
+.hide-page {
+  display: none;
+}
+.body {
+  display: flex;
+  justify-content: space-between;
+  height: 800px;
+}
+.left-body,
+.right-body {
+  width: 5%;
+  background-color: rgb(94, 101, 116);
+}
+.main-body {
+  width: 90%;
+}
+.employeeAssignment {
+  width: 100%;
+  border: 1px solid black;
+}
+.listEmployee {
+  width: 100%;
+  border: 1px solid black;
+}
+.listDepartment {
+  width: 100%;
+  border: 1px solid black;
+}
+.listPosition {
+  width: 100%;
+  border: 1px solid black;
+}
+
+#addEmpPage form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+}
+#addDeptPage form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+}
+.formBox button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+legend {
+  background-color: rgb(64, 68, 77);
+  color: azure;
+}
+.cariA {
+  display: flex;
+  justify-content: space-between;
+}
+.cariB1 {
+  width: 30%;
+}
+.cariB2 {
+  width: 40%;
+}
+.cariB2 {
+  text-align: center;
+}
+#kataKunci {
+  width: 100%;
+}
+.cariB3 {
+  width: 30%;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}

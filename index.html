@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HRD Tools</title>
+    <link rel="stylesheet" href="./style.css" />    
+  </head>
+  <body>
+    <div class="header">
+      <div class="left-header"></div>
+      <div class="menuNav" onclick="changeMenuTo('addEmpPage')">
+        Add Employee
+      </div>
+      <div class="menuNav" onclick="changeMenuTo('addDeptPage')">
+        Add Department
+      </div>
+      <div class="menuNav" onclick="changeMenuTo('assignDeptPage')">
+        Assignment
+      </div>
+      <div class="menuNav" onclick="changeMenuTo('listEmpPage')">Employee</div>
+      <div class="menuNav" onclick="changeMenuTo('listDeptPage')">
+        Department
+      </div>
+      <div class="right-header"></div>
+    </div>
+    <div class="body">
+      <div class="left-body"></div>
+      <div class="main-body">
+        <div id="addEmpPage" class="hide-page">
+          <div class="formAddEmployee">
+          </br>
+            <form>
+              <fieldset>
+                <legend>Employee Addition Form</legend>
+                <div class="kerangka-form">
+                  <div class="kiri-form"></div>
+                  <div class="isi-form">
+                    <div class="formBox">
+                      <label for="nik">NIK:</label>
+                      <br />
+                      <input type="text" id="nik" placeholder="No. KTP" required/>
+                    </div class="formBox">
+                    <div class="formBox">
+                      <label for="nama">Nama:</label>
+                      <br />
+                      <input type="text" id="nama" placeholder="Nama Lengkap" required/>
+                    </div>
+                    <div class="formBox">
+                      <label for="tempatlahir">Tempat Lahir:</label>
+                      <br />
+                      <input
+                        type="text"
+                        id="tempatlahir"
+                        placeholder="Kota/Kabupaten"
+                        required
+                      />
+                    </div>
+                    <div class="formBox">
+                      <label for="tanggallahir">Tanggal Lahir:</label>
+                      <br />
+                      <input
+                        type="date"
+                        id="tanggallahir"
+                        placeholder="Tanggal Lahir"
+                        required
+                      />
+                    </div>
+                    <div class="formBox">
+                      <label for="gender">Gender:</label>
+                      <br />
+                      <select name="gender" id="gender">
+                        <option alue="Laki-laki">Laki-laki</option>
+                        <option value="Perempuan">Perempuan</option>                        
+                      </select>
+                    </div>
+                    <div class="formBox">
+                      <label for="goldarah">Golongan Darah:</label>
+                      <br />
+                      <select name="goldarah" id="goldarah">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="AB">AB</option>
+                        <option value="O">O</option>
+                      </select>
+                    </div>                    
+                    <div class="formBox">
+                      <label for="alamat">Alamat:</label>
+                      <br />
+                      <textarea name="alamat" id="alamat" cols="30" rows="10" placeholder="Alamat anda saat ini"></textarea>                
+                    </div>
+                    <div class="formBox">
+                      <label for="agama">Agama:</label>
+                      <br />
+                      <select name="agama" id="agama">
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen">Kristen</option>
+                        <option value="Katolik">Katolik</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Budha">Budha</option>
+                        <option value="Konghucu">Konghucu</option>
+                        <option value="Lainnya">Lainnya</option>
+                      </select>
+                    </div>
+                    <div class="formBox">
+                      <label for="statusnikah">Status Pernikahan:</label>
+                      <br />
+                      <select name="statusnikah" id="statusnikah">
+                        <option value="Sudah-Menikah">Sudah Menikah</option>
+                        <option value="Cerai">Cerai</option>
+                        <option value="Belum-Menikah">Belum Menikah</option>
+                      </select>
+                    </div>
+                    <div class="formBox">
+                      <label for="kewarganegaraan">Kewarganegaraan:</label>
+                      <br />
+                      <select name="kewarganegaraan" id="kewarganegaraan">
+                        <option value="WNI">Warna Negara Indonesia</option>
+                        <option value="WNA">Warga Negara Asing</option>                        
+                      </select>
+                    </div>
+                    </br>
+                    <div class="formBox">
+                      <button id="btn1">Tambah</button>
+                    </div>                  
+                  </div>
+                  <div class="kanan-form"></div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <div id="addDeptPage" class="hide-page">
+          <div class="formAddDepartment">
+          </br>
+          </br>
+            <form>
+              <fieldset>
+                <legend>Department Addition Form</legend>
+                <div class="kerangka-form">
+                  <div class="kiri-form"></div>
+                  <div class="isi-form">
+                    <div class="formBox">
+                      <label for="namadepartemen">Nama Departemen:</label>
+                      <br />
+                      <input type="text" id="namadepartemen" placeholder="Nama Departemen" required/>
+                    </div class="formBox"> 
+                  </br>                                     
+                    <div class="formBox">
+                      <button id="btn2">Tambah</button>
+                    </div>                  
+                  </div>
+                  <div class="kanan-form"></div>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Position Addition Form</legend>
+                <div class="kerangka-form">
+                  <div class="kiri-form"></div>
+                  <div class="isi-form">                    
+                    <div class="formBox">
+                      <label for="posisi">Posisi:</label>
+                      <br />
+                      <input type="text" id="posisi" placeholder="Posisi dalam Struktur" required/>
+                    </div>                    
+                    <div class="formBox">
+                    </br>
+                      <button id="btn3">Tambah</button>
+                    </div>                  
+                  </div>
+                  <div class="kanan-form"></div>
+                </div>
+              </fieldset>
+            </form>
+          </div>         
+        </div>
+        <div id="assignDeptPage" class="hide-page">
+        </br>
+          <div class="cariA">
+            <div class="cariB1"></div>
+            <div class="cariB2">
+              <label for="nama-pegawai">Nama yang akan mendapat assignment:</label>
+              <input type="text"
+              placeholder="Cari Nama"
+              id="kataKunci"
+              onkeyup="cariData()">
+            </div>
+            <div class="cariB3"></div>
+          </div>
+        </br>
+          <div class="assignEmployee">
+            <table class="employeeAssignment">
+              <thead>
+                <tr>               
+                  <th data-column="nik" data-order="desc">NIK</th>
+                  <th data-column="nama" data-order="desc">Nama</th>
+                  <th data-column="detail" data-order="desc">Detail</th>
+                  <th data-column="department" data-order="desc">Department</th>
+                  <th data-column="position" data-order="desc">Position</th>
+                  <th data-column="assign" data-order="desc">Assignment</th>                  
+                </tr>
+              </thead>
+              <tbody id="tabel-assignment"></tbody>
+            </table>            
+          </div>
+        </div>
+        <div id="listEmpPage" class="hide-page">
+        </br>
+        </br>
+          <table class="listEmployee">
+            <thead>
+              <tr>               
+                <th data-column="nik" data-order="desc">NIK</th>
+                <th data-column="nama" data-order="desc">Nama</th>
+                <th data-column="ttl" data-order="desc">TTL</th>
+                <th data-column="gender" data-order="desc">Gender</th>
+                <th data-column="goldar" data-order="desc">Gol.Darah</th>
+                <th data-column="alamat" data-order="desc">Alamat</th>
+                <th data-column="agama" data-order="desc">Agama</th>
+                <th data-column="status" data-order="desc">Status</th>
+                <th data-column="penduduk" data-order="desc">Penduduk</th>
+                <th data-column="department" data-order="desc">Department</th>
+                <th data-column="position" data-order="desc">Position</th>
+                <th data-column="edit" data-order="desc">Edit</th>
+                <th data-column="delete" data-order="desc">Delete</th>
+              </tr>
+            </thead>
+            <tbody id="tabel-employee"></tbody>
+          </table>
+        </div>
+        <div id="listDeptPage" class="hide-page">
+        </br>
+          <table class="listDepartment">
+            <thead>
+              <tr>          
+                <th data-column="department" data-order="desc">Department</th>                
+                <th data-column="edit" data-order="desc">Edit</th>
+                <th data-column="delete" data-order="desc">Delete</th>
+              </tr>
+            </thead>
+            <tbody id="tabel-department"></tbody>          
+          </table>
+        </br>
+      </br>
+          <table class="listPosition">
+            <thead>
+              <tr>        
+                <th data-column="position" data-order="desc">Position</th>
+                <th data-column="edit" data-order="desc">Edit</th>
+                <th data-column="delete" data-order="desc">Delete</th>
+              </tr>
+            </thead>
+            <tbody id="tabel-position"></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="right-body"></div>
+    </div>
+    <script src="./script.js" type="text/javascript"></script>
+    <script>
+      lihatProyeksiAssignment(arrayEmployee2);
+      tambahPilihan1(arrayDepartment2);
+      tambahPilihan2(arrayPosition2);
+      lihatTabelEmployee(ambilEmp2, ambilPilihanPos, ambilPilihanDep);
+      lihatDaftarDepartment(arrayDepartment2);
+      lihatDaftarPosition(arrayPosition2);
+    </script>
+    
+  </body>
+</html>
