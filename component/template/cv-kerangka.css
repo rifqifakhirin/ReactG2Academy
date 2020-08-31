@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap");
+.cv-kerangka {
+    display: flex;
+    justify-content: space-between;
+    height: 1025px;
+    font-family: "Balsamiq Sans", cursive;
+    
+}

@@ -1,0 +1,7 @@
+.about-rifqi {
+    display: flex;
+    justify-content: space-between;
+    background: url(./grey.jpg);
+    background-size: cover;
+    
+}
