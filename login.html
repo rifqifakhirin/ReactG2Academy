@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parking Login</title>
+    <link rel="stylesheet" href="./styleLogin.css" />
+  </head>
+  <body>
+    <div class="kiri-body"></div>
+    <div class="isi-body">
+      <h2>Welcome to Login Page!</h2>
+      <form action="" name="loginParkir">
+        Selamat dan semangat bekerja, terima kasih telah mengelola parkir.
+        <br />
+        <br />
+        <div>
+          <label for="loginAs">Login sebagai:</label>
+          <select name="posisi" id="posisi" required>
+            <option value="">-----Posisi-----</option>
+            <option value="Administrator">Administrator</option>
+            <option value="Operator1">Operator</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Ketik di sini"
+            required
+          />
+        </div>
+        <br />
+        <div>
+          <button onclick="loginPARKIR(event)">Masuk</button>
+        </div>
+      </form>
+      <br />
+    </div>
+    <div class="kanan-body"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>

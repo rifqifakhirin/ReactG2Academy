@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+}
+.kiri-body {
+  width: 15%;
+}
+.kanan-body {
+  width: 15%;
+}
+.isi-body {
+  width: 70%;
+  background-color: #1a568d;
+  margin-top: 10px;
+  border-radius: 30px;
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: azure;
+}
+a {
+  text-decoration: none;
+  background-color: rgb(17, 44, 61);
+  color: whitesmoke;
+  height: 15px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+th {
+  background-color: rgb(51, 53, 58);
+  color: rgb(223, 223, 235);
+}
+
+tr:nth-child(odd) {
+  background-color: #cfdafa;
+  color: rgb(44, 44, 77);
+}
+tr:nth-child(even) {
+  color: rgb(235, 235, 253);
+}

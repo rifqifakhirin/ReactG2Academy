@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+}
+.kiri-body {
+  width: 35%;
+}
+.kanan-body {
+  width: 35%;
+}
+.isi-body {
+  width: 30%;
+  background-color: #384047;
+  margin-top: 80px;
+  height: 300px;
+  border-radius: 30px;
+  padding-top: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: azure;
+}

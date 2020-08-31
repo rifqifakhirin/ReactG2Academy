@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="./styleAdmin.css" />
+  </head>
+  <body>
+    <div class="kiri-body"></div>
+    <div class="isi-body">
+      <h2>Administrasi Parkir</h2>
+      <div class="pilihan-menu">
+        <div>
+          <button class="pilihan" onclick="changeMenuTo('akun')">
+            Kelola Akun
+          </button>
+        </div>
+        <div>
+          <button class="pilihan" onclick="changeMenuTo('harga')">
+            Kelola Harga
+          </button>
+        </div>
+        <div>
+          <button class="pilihan" onclick="changeMenuTo('operator')">
+            Laporan Operator
+          </button>
+        </div>
+        <div>
+          <button class="pilihan" onclick="changeMenuTo('chart')">
+            Tampilan Chart
+          </button>
+        </div>
+      </div>
+      <br />
+      <div id="akun" class="hide-page">
+        <table class="list-akun">
+          <thead>
+            <tr>
+              <th>Username</th>
+              <th>Password</th>
+              <th>Edit</th>
+            </tr>
+          </thead>
+          <tbody id="tabelAkun"></tbody>
+        </table>
+      </div>
+      <div id="harga" class="hide-page">
+        <table class="list-harga">
+          <thead>
+            <tr>
+              <th>Jenis</th>
+              <th>Menit Satu (Rupiah)</th>
+              <th>Edit</th>
+              <th>Menit Selanjutnya (Rupiah)</th>
+              <th>Edit</th>
+            </tr>
+          </thead>
+          <tbody id="tabelHarga"></tbody>
+        </table>
+      </div>
+      <div id="operator" class="hide-page">
+        <table class="laporan">
+          <thead>
+            <tr>
+              <th>Jenis</th>
+              <th>No. Plat</th>
+              <th>Masuk</th>
+              <th>Keluar</th>
+              <th>Biaya</th>
+            </tr>
+          </thead>
+          <tbody id="laporanOperator"></tbody>
+        </table>
+      </div>
+      <div id="chart" class="hide-page">
+        <canvas id="myChart1"></canvas>
+      </div>
+    </div>
+    <div class="kanan-body">
+      <button onclick="pindahHalaman(event)">Kembali ke Login</button>
+    </div>
+    <script src="./script.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script></script>
+    <script>
+      let listPage = ["akun", "harga", "operator", "chart"];
+      //fungsi buat ganti menu halaman
+      function changeMenuTo(pilihan) {
+        for (let i = 0; i < listPage.length; i++) {
+          if (listPage[i] == pilihan) {
+            // show page
+            let classPage = document.getElementById(pilihan).classList;
+            classPage.remove("hide-page");
+            continue;
+          }
+          // hide page
+          let classPage = document.getElementById(listPage[i]).classList;
+          classPage.add("hide-page");
+        }
+      }
+      changeMenuTo("akun");
+    </script>
+    <script>
+      kelolaAkun(dataAkun);
+      kelolaHarga(listHarga);
+      rekapOperator(dataParkir);
+      buatChart(dataParkir);
+    </script>
+  </body>
+</html>

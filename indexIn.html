@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parking</title>
+    <link rel="stylesheet" href="./styleIn.css" />
+  </head>
+  <body>
+    <div class="kiri-body"></div>
+    <div class="isi-body">
+      <h2>Parkir Masuk</h2>
+      <form action="" name="inputParkir">
+        Harap ramah kepada pengendara dan ingatkan untuk berhati-hati dengan
+        barang bawaan
+        <br />
+        <br />
+        <div>
+          <label for="jenis">Kendaraan</label>
+          <select name="jenis" id="jenis" required>
+            <option value="">--Jenis--</option>
+            <option value="Motor">Motor</option>
+            <option value="Mobil">Mobil</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <label for="noPlat">No. Kendaraan:</label>
+          <input
+            type="text"
+            id="noPlat"
+            placeholder="Nomor pada plat"
+            required
+          />
+        </div>
+        <br />
+        <div>
+          <button onclick="masukParkir(event)">Dapatkan Tiket Parkir</button>
+        </div>
+      </form>
+      <br />
+      <div>
+        <a href="/day04_1_agustus24/indexOut.html">Kendaraan Keluar</a>
+      </div>
+    </div>
+    <div class="kanan-body">
+      <button onclick="pindahHalaman(event)">Kembali ke Login</button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

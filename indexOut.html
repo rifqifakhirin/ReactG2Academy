@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parking</title>
+    <link rel="stylesheet" href="./styleOut.css" />
+  </head>
+  <body>
+    <div class="kiri-body"></div>
+    <div class="isi-body">
+      <h2>Parkir Keluar</h2>
+      <div>
+        <label for="cari">Cari:</label>
+        <input
+          type="text"
+          placeholder="No. Plat"
+          id="kataKunci"
+          onkeyup="cariData()"
+          style="text-align: center"
+        />
+      </div>
+      <!-- <button onclick="tabPark(event)">Generate</button> -->
+      <br />
+      <table>
+        <thead>
+          <tr>
+            <th>Jenis</th>
+            <th>No. Plat</th>
+            <th>Waktu Masuk</th>
+            <th>Proses</th>
+            <th>Biaya</th>
+            <th>Hapus</th>
+          </tr>
+        </thead>
+        <tbody id="tabel-parkir1"></tbody>
+      </table>
+
+      <br /><br />
+      <a href="/day04_1_agustus24/indexIn.html">Kendaraan Masuk</a>
+    </div>
+    <div class="kanan-body"></div>
+
+    <script src="./script.js"></script>
+    <script>
+      tabPark(dataMasuk);
+    </script>
+  </body>
+</html>

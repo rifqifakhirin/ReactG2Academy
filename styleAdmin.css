@@ -1,0 +1,70 @@
+body {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  background-color: #1a568d;
+}
+.kiri-body {
+  width: 5%;
+}
+.kanan-body {
+  width: 5%;
+}
+.kanan-body button {
+  background-color: #1a568d;
+  color: aliceblue;
+  border-radius: 10px;
+}
+.isi-body {
+  width: 90%;
+  background-color: #f1f4fa;
+  margin-top: 50px;
+  height: 1000px;
+  border-radius: 30px;
+  padding-top: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: rgb(33, 34, 34);
+}
+.pilihan-menu {
+  display: flex;
+  justify-content: center;
+}
+.pilihan-menu div {
+  margin: 5px;
+}
+.pilihan {
+  background-color: #1a568d;
+  color: aliceblue;
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+}
+.hide-page {
+  display: none;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #3a3b3d;
+  text-align: left;
+  padding: 8px;
+}
+
+thead {
+  background-color: rgb(68, 72, 99);
+  color: azure;
+}
+
+tr:nth-child(even) {
+  background-color: #c3d2fa;
+}
