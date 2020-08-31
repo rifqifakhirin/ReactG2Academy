@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header"></div>
+    <div class="body">
+      <div class="kiri-body"></div>
+      <div class="isi-body">
+        <div class="pembukaan">
+          <h1>Selamat Datang</h1>
+          <p>
+            Bagi para pengunjung yang belum melakukan registrasi, harap
+            registrasi terlebih dahulu
+          </p>
+        </div>
+        <div class="isian">
+          <form>
+            <fieldset>
+              <legend>Daftar Pengunjung</legend>
+              <div class="kerangka-form">
+                <div class="kiri-form"></div>
+                <div class="isi-form">
+                  <div class="formBox">
+                    <label for="nik">NIK:</label>
+                    <br />
+                    <input type="text" id="nik" placeholder="NIK Anda" required/>
+                  </div class="formBox">
+                  <div class="formBox">
+                    <label for="nama">Nama:</label>
+                    <br />
+                    <input type="text" id="nama" placeholder="Nama Anda" required/>
+                  </div>
+                  <div class="formBox">
+                    <label for="pic">PIC:</label>
+                    <br />
+                    <input
+                      type="text"
+                      id="pic"
+                      placeholder="Nama yang Anda Temui"
+                      required
+                    />
+                  </div>
+                  <div class="formBox">
+                    <label for="kepentingan">Kepentingan:</label>
+                    <br />
+                    <input
+                      type="text"
+                      id="kepentingan"
+                      placeholder="Jenis Urusan"
+                      required
+                    />
+                  </div>
+                  <div class="formBox">
+                    <button id="btn">Simpan</button>
+                  </div>                  
+                </div>
+                <div class="kanan-form"></div>
+              </div>
+            </fieldset>
+          </form>
+        </div>  
+        </br>  
+        </br>   
+        <div>
+          <table> List Pengunjung yang telah terdaftar
+            <thead>
+              <tr>               
+                <th data-column="nik" data-order="desc">NIK</th>
+                <th data-column="nama" data-order="desc">Nama</th>
+                <th data-column="pic" data-order="desc">PIC</th>
+                <th data-column="kepentingan" data-order="desc">Kepentingan</th>                
+              </tr>
+            </thead>
+            <tbody id="tabel-pengunjung"></tbody>
+          </table>
+        </div>
+        <div id="msg">
+          <pre></pre>
+        </div>
+      </div>
+      <div class="kanan-body"></div>
+    </div>    
+  </body>
+</html>
+

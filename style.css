@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap");
+
+.header {
+  background: url(https://image.freepik.com/free-vector/abstract-technology-particle-background_52683-25766.jpg)
+    no-repeat;
+  background-size: cover;
+  height: 100px;
+  margin: -10px -10px 0px -10px;
+}
+.body {
+  display: flex;
+  justify-content: space-between;
+  height: 2000px;
+}
+.kiri-body {
+  width: 10%;
+  background-color: rgb(10, 81, 105);
+  margin-left: -10px;
+}
+.isi-body {
+  width: 80%;
+  font-family: "Balsamiq Sans", cursive;
+}
+.kanan-body {
+  width: 10%;
+  background-color: rgb(10, 81, 105);
+  margin-right: -10px;
+}
+.pembukaan {
+  text-align: center;
+}
+fieldset {
+  border-radius: 10px;
+  border-color: rgb(150, 160, 170);
+}
+fieldset legend {
+  text-align: center;
+}
+.kerangka-form {
+  display: flex;
+  justify-content: space-between;
+}
+.kiri-form {
+  width: 20%;
+}
+.isi-form {
+  width: 60%;
+}
+.kanan-form {
+  width: 20%;
+}
+.formBox {
+  margin-top: 5px;
+}
+button {
+  border-radius: 5px;
+  background-color: rgb(49, 49, 121);
+  color: aliceblue;
+}
+table {
+  width: 100%;
+  border: 2px solid rgb(84, 84, 90);
+}
+th {
+  background-color: rgb(10, 81, 105);
+  color: white;
+}
