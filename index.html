@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentation - Rifqi Fakhirin</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="./img/logo.png" type="image/png" rel="icon" />
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="code.js" defer></script>
+  </head>
+  <body>
+    <div class="row-fluid">      
+      <div class="span12">
+        <div class="row-fluid">
+          <div class="span2" style="color: #9ACD32;">
+            <img class="gmbrheader" src="./img/logo.png" alt="logo agroindustri">
+            Grondustarian                      
+          </div>
+          <div class="span2" onclick="changeMenuTo('homePage')">
+            <i class="icon-home"></i>
+            Home
+          </div>
+          <div class="span2" onclick="changeMenuTo('cvPage')">
+            <i class=" icon-briefcase"></i>
+            My CV
+          </div>
+          <div class="span2" onclick="changeMenuTo('articlePage')">
+            <i class="icon-book"></i>
+            Review
+          </div>
+          <div class="span2" onclick="changeMenuTo('hobbyPage')">
+            <i class="icon-thumbs-up"></i>
+            Motivation
+          </div>
+          <div class="span2" onclick="changeMenuTo('contactPage')">
+            <i class="icon-envelope"></i>
+            Contact Me
+          </div>
+        </div>
+      </div>             
+      </div>
+    </div>
+    <div>             
+      <div id="homePage" class="hide-page">
+        <div class="bg-home">            
+            <div class="posisi-tengah">
+              <div class="kiri-posisi"></div>
+              <div class="isi-tengah">
+                <p>SYARAF NEURON PUTUS DI OTAK KARENA BELAJAR</p>
+                <p>TAPI KEMUDIAN TERSAMBUNG KEMBALI,</p>
+                <p>DENGAN JUMLAH YANG LEBIH BANYAK. HAYUK BELAJAR</p>
+                <button class="btn btn-success" onclick="changeMenuTo('hobbyPage')">
+                  Butuh motivasi? Klik sekarang</button>
+              </div>
+              <div class="kanan-posisi"></div>              
+            </div>
+        </div> 
+        <div class="home-isi">
+            <div class="home-pinggirkiri"></div>
+            <div class="home-gambar1">
+                <img src="./img/bk-gabung.png" alt="cover-buku-buku">
+            </div>
+            <div class="home-teks1">
+                <h2>Selamat Datang!</h2>
+                <p>Ini adalah website pribadi saya yang berisi tentang pengenalan agroindustri sebagai latar belakang pendidikan, 
+                    CV, dan sedikit motivasi tentang semangat berjuang dalam belajar. Ayo jelajahi dan tambah wawasanmu.
+                </p>
+                <button class="btn btn-warning" onclick="changeMenuTo('articlePage')">Mulai</button>
+
+            </div>
+            <div class="home-pinggirkanan"></div>
+        </div>
+        <div class="home-isi2">
+            <div class="home-pinggirkiri2"></div>
+            <div class="home-isikiri">
+                <button style="height: 100%;" class="btn btn-large btn-block btn-inverse" type="button"
+                onclick="changeMenuTo('cvPage')">
+                    <i class="icon-briefcase"></i>
+                    My CV
+                </button>
+            </div>
+            <div class="home-isikanan">
+                <button class="btn btn-large btn-block btn-success" type="button"
+                onclick="changeMenuTo('articlePage')">
+                    <i class="icon-book"></i>
+                    Review
+                </button>
+                <div class="home-isikanandalam">
+                    <div class="home-isikanandalam1">
+                        <button class="btn btn-large btn-block btn-info" type="button"
+                        onclick="changeMenuTo('hobbyPage')">
+                            <i class="icon-thumbs-up"></i>
+                            Motivation
+                        </button>
+                    </div>
+                    <div class="home-isikanandalam2">
+                        <button class="btn btn-large btn-block btn-warning" type="button"
+                        onclick="changeMenuTo('contactPage')">
+                            <i class="icon-envelope"></i>
+                            Contact Me
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="home-pinggirkanan2"></div>
+        </div>
+      </div>
+      <div id="cvPage" class="hide-page">
+        <div class="cv-kerangka">
+          <div class="kiri-cv">tes</div>
+          <div class="isi-cv">
+            <div class="penyangga-atas"></div>
+            <div class="about-rifqi">
+              <img class="about-gambar img-circle" src="./img/foto.jpg" alt="foto-profil">
+              <div class="about-teks">
+                <h2 style="color: rgb(3, 120, 136);">Rifqi Fakhirin, S.TP</h2>
+                I am a friendly person who loved to learn and happier make people around
+                me feel happy. Graduated as a Bachelor of Agricultural Technology at
+                Bogor Agricultural University which studied about Agro-Industrial
+                Technology had impacts for me especially for my character and
+                contribution. I like to communicate with people in interpersonal way and
+                have a passion to develop my skill and people I hold on to.
+              </div>
+            </div>
+            <div class="personal-kerangka">
+                <div class="personal-informasi">
+                <h2>PERSONAL INFORMATION</h2>              
+                <h3>Date of Birth:</h3>
+                <p>January 15th 1995</p>
+                <h3>Gender:</h3>
+                <p>Male</p>
+                <h3>Address:</h3>
+                <p>
+                Masjid Al-Ikhlas Street No. 47, Cinangneng, Cihideung Udik, Ciampea,
+                Bogor, West Java, Indonesia, Postal Code 16620
+                </p>
+                <h3>Phone:</h3>
+                <p>+62-85781112495</p>
+                <h3>E-mail:</h3>
+                <p>rifqifakhirin@gmail.com</p>
+              </div>
+              <div class="personal-kualifikasi">
+                <h2 style="color: #5d8019;">PERSONAL QUALIFICATION</h2>
+                <div class="pengalaman-kerja">
+                  <h3 style="color:rgb(214, 76, 12)">Work Experience:</h3>
+                  <table style="border: no-border;">
+                    <thead>
+                        <tr>                            
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody >
+                        <tr>                            
+                            <td>March 2020 – April 2020</td>
+                            <td>Product Brand Rater - Remote</td>
+                        </tr>
+                        <tr>                            
+                            <td></td>
+                            <td>Independent contractor at Appen Butler Hill - Freelance</td>
+                        </tr>
+                        <tr>                            
+                          <td>September 2018 – February 2020</td>
+                          <td>Web Search Evaluator - Remote</td>
+                        </tr>
+                        <tr>                            
+                          <td></td>
+                          <td>Independent contractor at Appen Butler Hill - Freelance</td>
+                        </tr>
+                        <tr>                            
+                          <td>November 2017 - March 2018</td>
+                          <td>Media Social Evaluator - Remote</td>
+                        </tr>
+                        <tr>                            
+                          <td></td>
+                          <td>Independent contractor at Appen Butler Hill - Freelance</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+                <div class="study-training">
+                  <h3 style="color:rgb(214, 76, 12)">Education and Training:</h3>
+                  <table style="border: no-border;">                    
+                    <thead>
+                        <tr>                            
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody >
+                        <tr>                            
+                            <td>April 2019</td>
+                            <td>Awareness Training of ISO 9001:2015</td>
+                        </tr>
+                        <tr>                            
+                            <td></td>
+                            <td>Quality Management System</td>
+                        </tr>
+                        <tr>                            
+                          <td>April 2019</td>
+                          <td>Awareness Training of ISO 14001:2015</td>
+                        </tr>
+                        <tr>                            
+                          <td></td>
+                          <td>Environmental Management System</td>
+                        </tr>
+                        <tr>                            
+                          <td>April 2019</td>
+                          <td>Awareness Training of ISO 45001:2018</td>
+                        </tr>
+                        <tr>                            
+                          <td></td>
+                          <td>Occupational Health & Safety Management System</td>
+                        </tr>
+                        <tr>                            
+                          <td>April 2019</td>
+                          <td>Awareness Training of SMK3</td>
+                      </tr>
+                      <tr>                            
+                          <td></td>
+                          <td>Indonesian Occupational Health & Safety Management System</td>
+                      </tr>
+                      <tr>                            
+                        <td>July 2012 – July 2017</td>
+                        <td>Bachelor of Science in Agricultural Technology</td>
+                      </tr>
+                      <tr>                            
+                        <td></td>
+                        <td>Study Program of Agroindustrial Technology at IPB University (GPA Score: 3.58)</td>
+                      </tr>
+                      <tr>                            
+                        <td>July 2016 – July 2017</td>
+                        <td>Final Project</td>
+                      </tr>
+                      <tr>                            
+                        <td></td>
+                        <td>Use of Nonionic and Cationic Surfactants in Herbicide Formulations and Application with Glyphosate Active Substance</td>
+                      </tr>
+                    </tbody>
+                </table>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="kanan-cv">tes</div>
+        </div>
+        
+      </div>
+      <div id="articlePage" class="hide-page">
+        <div class=review-kerangka>
+          <div class="kiri-review"></div>
+          <div class="review-dalam">
+            Teknologi Industri Pertanian merupakan sebuah bidang keilmuan yang fokus pada transformasi produk Pertanian
+            untuk memperoleh nilai tambah. Ada tiga ruang lingkup utama dalam bidang ini antara lain lingkup teknologi 
+            dan rekayasa proses, manajemen lingkungan, serta teknik dan manajemen sistem. Di bawah ini merupakan contoh buku
+            atau referensi yang berkaitan dengan tiga lingkup tersebut.
+            <div class="review-dalam2">
+              <div class="buku1">
+                <img class="img-rounded" src="./img/bk1.png" alt="buku1">
+                <p>
+                  Ada sepuluh bab yang disajikan dalam buku ini dalam rangka untuk memberikan pemahaman yang komprehensif mengenai teknologi agroindustri
+                   kelapa sawit. Materi yang disajikan merupakan penuangan pengetahuan dan pengalaman penulis yang diperoleh melalui aktivitasnya di 
+                   bidang industri pangan dan kelapa sawit, dan juga dari proses pendampingan/pembimbingan penelitian dan kegiatan praktik lapang 
+                   mahasiswa di beberapa industri pengolahan kelapa sawit, serta dari kajian literatur-literatur seputar agroindustri kelapa sawit.
+                </p>
+                <button class="btn btn-large btn-block btn-warning" type="button">
+                  <a href="https://www.tokopedia.com/tokobukuubpress/buku-teknologi-pengolahan-limbah-agroindustri" target="_blank" rel="noopener noreferrer">Telusuri</a>
+                  </button>
+              </div>
+              <div class="buku2">
+                <img class="img-rounded" src="./img/bk2.png" alt="buku2">
+                <p>
+                  Limbah merupakan salah satu permasalahan besar yang dihadapi di Indonesia, termasuk di daerah perkotaan yang padat penduduk, 
+                  daerah perdesaan dan juga kawasan perindustrian. Penggunaan teknologi pengolahan yang mampu mengkonversikan limbah agroindustri 
+                  (padat, cair, dan gas) menjadi bioenergi atau untuk mengurangi konsentrasi bahan pencemar menjadi salah satu point penting berkaitan 
+                  dengan permasalahn limbah. Buku ini juga dilengkapi dengan berbagai informasi terdahulu dan terkini berkaitan dengan perkembangan 
+                  teknologi pengolahan limbah padat, cair dan gas.
+                </p>
+                <button class="btn btn-large btn-block btn-warning" type="button">
+                  <a href="https://www.researchgate.net/publication/337315913_Buku_Teknologi_Agroindustri_Kelapa_Sawit" target="_blank" rel="noopener noreferrer">Telusuri</a></button>
+              </div>
+              <div class="buku3">
+                <img class="img-rounded" src="./img/bk3.png" alt="buku3">
+                <p>Kansei engineering dapat didefinisikan sebagai rekayasa kuantifikasi sensibilitas manusia menggunakan parameter verbal dan nonverbal 
+                  sehingga parameter tersebut dapat digunakan untuk perancangan dan pengembangan produk, jasa, dan sistem kerja. Buku ini diharapkan bermanfaat 
+                  untuk pengguna/pemangku kepentingan (stakeholder) di sektor agroindustri, termasuk akademisi, pemerintah selaku penentu keputusan publik, 
+                  pelaku usaha, dan pemerhati bidang teknologi pertanian pada umumnya dan agroindustri pada khususnya.
+                </p>
+                <button class="btn btn-large btn-block btn-warning" type="button">
+                  <a href="https://www.tokopedia.com/indri1234/buku-kansei-engineering-lengkap-best-seller" target="_blank" rel="noopener noreferrer">Telusuri</a></button>
+              </div>
+            </div>
+          </div>
+          <div class="kanan-review"></div>
+        </div>
+      </div>
+      <div id="hobbyPage" class="hide-page">
+        <div class="motivation-kerangka">
+          <div class="kiri-motivasi"></div>
+          <div class="isi-motivasi">
+            <div>
+              <h1 style="text-align: center; color: #5d8019;">Dirimu adalah Apa yang Selalu Kau Ulang-ulangi</h1>
+              <p>Saat kita menyaksikan wawancara para ahli, pemenang, seniman, profesional, praktisi, penggelut, teknisi, atau bahkan petarung selalu ada pertanyaan tentang prestasi apa yang telah didapatkan atau hal apa yang telah diperoleh. 
+                  Kadang pertanyaan ini yang selalu <q>di-highlight</q> oleh media, tumbnail video, atau judul artikel. Tapi apakah tontonan atau bacaan seperti ini akan menginspirasi pembaca atau hanya akan menjadi <q>clickbait</q> semata? Meninggalkan bekas di alam bawah sadar tentang berita heboh apa hari ini, siapa yang berhasil, dan hanya menjadi sebuah lintasan pikiran yang lewat begitu saja.
+                  <br>
+                  <br>
+                  Coba kita perhatikan dengan seksama artikel di bawah ini:
+              </p>
+          </div>
+          <div style="text-align: center;">
+              <iframe src="https://www.merdeka.com/uang/kisah-kegagalan-5-orang-terkaya-dunia-termasuk-bill-gates-steve-jobs.html" 
+              frameborder="0"
+              width="800 px"
+              height="350 px">
+              </iframe>
+          </div>
+          <div>
+              <p>Kita tentunya sering melihat artikel seperti ini yang berfokus dan berhenti hanya pada kegagalan seseorang saja. Sedangkan artikel lainnya dari orang yang sama dibahas sebelumnya tentang adalah tentang keberhasilannya. Ada satu gap besar yang selalu hilang dari highlight tontonan atau bacaan, yaitu tentang kebangkitan. Tentang seberapa besar keinginan untuk bangkit, seberapa banyak usaha untuk bangkit, seberapa cepat kesadaran muncul untuk bangkit, seberapa konsisten komitmennya untuk bangkit, seberapa sabar untuk selalu memilih bangkit, dan seberapa yakin bahwa solusi utamanya adalah <strong>BANGKIT</strong>.
+                  <br>
+                  <br>
+                  Lihatlah beberapa contoh nyata di bawah ini:
+              </p>
+              
+          </div>
+          <div>
+              <ol>
+                  <li>Chef Terkenal</li>
+                  <img src="./img/Gordon-Ramsay.jpg" alt="Chef Gordon Ramsay">
+                  <br>
+                  <a href="https://id.wikipedia.org/wiki/Gordon_Ramsay" target="_blank">Cari tahu siapa Gordon Ramsay</a>
+                  <p>Mungkinkah dia pernah membuat masakan yang tidak enak? Kemungkinan besar ya. Mungkinkah dia membuat masakan yang tidak seenak sekarang saat pertama kali mencoba memasak? Kemungkinan besar ya. Mungkinkah jumlah kegagalannya lebih banyak dari keberhasilannya? Kemungkinan besar ya. Tapi apakah mungkin jumlah hasil yang gagal itu lebih banyak dari jumlah usaha dia untuk bangkit? Tidak mungkin.
+  
+                  </p>
+                  <li>Rusa Dewasa</li>
+                  <img src="./img/Rusa.jpg" alt="Rusa Dewasa">
+                  <br>
+                  <a href="https://id.wikipedia.org/wiki/Rusa" target="_blank">Cari tahu lebih tentang rusa</a>
+                  <p>Mungkinkah rusa yang sudah sampai seusia ini, pernah terkilir kakinya saat lari dari pemangsanya? Mungkin ya. Mungkinkah rusa ini pernah terluka saat diserang pemangsanya? Mungkin ya. Mungkinkah rusa ini sempat lengah saat diincar oleh pemangsanya? Mungkin ya. Mungkinkah rusa ini pernah merasa takut dan panik saat dikejar oleh pemangsanya? Sangat mungkin. Tapi apakah rusa ini pernah tidak sabar untuk memilih berhenti saja dan tidak bangkit saat mengalami hal-hal buruk itu? Tidak mungkin, karena kalau sampai terjadi pastinya foto rusa di usia ini tidak pernah ada.
+  
+                  </p>
+              </ol>
+          </div>
+          <div>
+              <p>Mulai saat ini, ulangi pertanyaan di bawah ini dalam diri anda saat anda ragu untuk menjalani sesuatu:
+  
+              </p>
+              <ul>
+                  <li>Siapkah saya untuk lebih banyak bangkit</li>
+                  <li>Siapkah saya untuk memilih bangkit di akhir</li>
+                  <li>Yakinkah saya untuk bahagia karena berhasil bangkit</li>
+              </ul>
+          </div>
+          <pre>
+              Teruslah memilih bangkit hingga kegagalan menolak untuk bersamamu. 
+              Teruslah memikirkan cara bangkit hingga kegagalan tak punya cara untuk bersamamu. 
+              Teruslah setia untuk bangkit hingga kegagalan bosan bersamamu. 
+              Teruslah bangkit untuk memilih bahagia hingga kegagalan tidak bisa lagi mengganggu kebahagiaanmu. 
+              Dirimu adalah apa yang selalu kau ulang-ulangi.
+  
+          </pre>
+          </div>
+          <div class="kanan-motivasi"></div>
+        </div>
+        
+      </div>
+      <div id="contactPage" class="contactMe hide-page">
+        <h2 style="color:rgb(214, 76, 12)">Contact Me</h2>
+        <br />
+        <p>
+          I will reply to your email a maximum of 2 days. please say what you want
+          to ask in the form below:
+        </p>
+        <br />
+        <form action="./index.html">
+          <fieldset>
+            <legend><b>Ask Question</b></legend>
+            <label for="fname">Your name:</label><br />
+            <input type="text" id="fname" placeholder="write here" required /><br />
+            <label for="ename">Your email:</label><br />
+            <input
+              type="email"
+              id="ename"
+              placeholder="please write correctly"
+              required
+            /><br />
+            <br />
+            <label for="question">Question:</label>
+            <br />
+            <textarea
+              placeholder="write your question here"
+              id="question"
+              cols="80"
+              rows="10"
+              required
+            ></textarea>
+            <br />
+            <input class="tombol" type="submit" value="Submit" />
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <div class="footer">
+        <p>Meet me on social media:</p>
+      <a
+        href="https://www.linkedin.com/in/rifqi-fakhirin-a2b442171/"
+        target="_blank"
+      >
+        <img
+          src="./img/linkedin.png"
+          alt="linkedin"
+        />rifqi-fakhirin-a2b442171
+      </a>
+      <a href="https://www.instagram.com/rifqi_fakhirin/" target="_blank">
+        <img src="./img/instagram.png" alt="instagram" />rifqi_fakhirin
+      </a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap");
+
+.row-fluid {
+  background-color: #696969;
+  height: 40px;
+  position: fixed;
+}
+.span2 {
+  font-family: "Balsamiq Sans", cursive;
+  color: white;
+  padding-top: 10px;
+}
+.span2:hover {
+  font-size: 15px;
+}
+.gmbrheader {
+  width: 20px;
+}
+#homePage {
+  padding-top: 50px;
+}
+.bg-home {
+  width: 100%;
+  height: 400px;
+  background-image: url(./img/bg_city1.png);
+  background-size: cover;
+  margin-top: -50px;
+}
+.posisi-tengah {
+  display: flex;
+  justify-content: space-between;
+}
+.kiri-posisi {
+  width: 30%;
+}
+.isi-tengah {
+  width: 40%;
+  margin-top: 60px;
+  margin-bottom: -100px;
+  font-family: "Balsamiq Sans", cursive;
+}
+.kanan-posisi {
+  width: 30%;
+}
+.bg-home p {
+  text-align: center;
+}
+.isi-tengah button {
+  margin-left: 150px;
+}
+.hide-page {
+  display: none;
+}
+.home-isi {
+  display: flex;
+  justify-content: space-between;
+  height: 300px;
+  padding-top: 60px;
+  background-color: #d3d3d3;
+  font-family: "Balsamiq Sans", cursive;
+}
+.home-pinggirkiri {
+  width: 15%;
+}
+.home-gambar1 {
+  width: 30%;
+}
+.home-teks1 {
+  width: 40%;
+  text-align: justify;
+}
+.home-pinggirkanan {
+  width: 15%;
+}
+.home-isi2 {
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.home-pinggirkiri2 {
+  width: 15%;
+}
+.home-isikiri {
+  width: 35%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.home-isikanan {
+  width: 35%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.home-pinggirkanan2 {
+  width: 15%;
+}
+.home-isikanandalam {
+  display: flex;
+  justify-content: space-between;
+}
+.home-isikanandalam1 {
+  width: 50%;
+  padding-right: 5px;
+  padding-top: 5px;
+}
+.home-isikanandalam2 {
+  width: 50%;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.cv-kerangka {
+  display: flex;
+  justify-content: space-between;
+  height: 1000px;
+  font-family: "Balsamiq Sans", cursive;
+}
+.kiri-cv {
+  width: 10%;
+}
+.isi-cv {
+  width: 80%;
+}
+.penyangga-atas {
+  padding: 30px;
+}
+.about-rifqi {
+  display: flex;
+  justify-content: space-between;
+  background: url(./img/grey.jpg);
+  background-size: cover;
+}
+.about-gambar {
+  width: 25%;
+  margin: 5px;
+}
+.about-teks {
+  width: 75%;
+  margin: 15px 10px 50px 5px;
+  background-color: white;
+}
+.personal-kerangka {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(3, 120, 136);
+}
+.personal-informasi {
+  width: 30%;
+  margin: 5px;
+  background-color: lightgray;
+}
+.personal-kualifikasi {
+  width: 70%;
+  margin: 5px;
+  background-color: white;
+}
+.kanan-cv {
+  width: 10%;
+}
+
+.review-kerangka {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+  font-family: "Balsamiq Sans", cursive;
+}
+.kiri-review {
+  width: 10%;
+}
+.kanan-review {
+  width: 10%;
+}
+.review-dalam {
+  width: 80%;
+}
+.review-dalam2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.buku1 {
+  width: 33.33%;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.buku2 {
+  width: 33.33%;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.buku3 {
+  width: 33.33%;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.motivation-kerangka {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  font-family: "Balsamiq Sans", cursive;
+  height: 1700px;
+}
+.kiri-motivasi {
+  width: 10%;
+  background: url(./img/grey3.jpg) repeat;
+  background-size: cover;
+  height: 100%;
+  float: left;
+}
+.isi-motivasi {
+  width: 80%;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.kanan-motivasi {
+  width: 10%;
+  background: url(./img/grey2.jpg) repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.contactMe {
+  font-family: "Balsamiq Sans", cursive;
+  padding: 90px 190px;
+  margin: auto;
+  border: 10px;
+  height: 800px;
+  background-color: white;
+}
+.contactMe fieldset {
+  border: 10px solid rgb(175, 170, 170);
+  padding: 10px 10px;
+  height: 600px;
+}
+label {
+  font-family: Montserrat, sans-serif;
+}
+input {
+  font-family: Montserrat, sans-serif;
+  color: grey;
+}
+textarea {
+  font-family: Montserrat, sans-serif;
+  border: 1px solid rgb(248, 99, 79);
+  width: 80%;
+  color: grey;
+}
+.tombol {
+  background-color: rgb(248, 99, 79);
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid rgb(187, 64, 48);
+  color: whitesmoke;
+  font-weight: bold;
+}
+.tombol:hover {
+  padding: 15px;
+}
+.footer {
+  background-color: black;
+  height: 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  font-family: Montserrat, sans-serif;
+}
+.footer p {
+  padding-top: 5px;
+}
+.footer a {
+  color: white;
+  list-style-type: none;
+  padding-top: -5px;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: orange;
+  font-size: 20px;
+}
+
+.footer img {
+  height: 15px;
+  padding-top: 5px;
+  margin-left: 25px;
+}
