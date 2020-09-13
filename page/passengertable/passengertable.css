@@ -1,0 +1,43 @@
+.passengertable {
+    background-color: rgb(88, 1, 1);
+    color: rgb(235, 233, 233);
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 30px;    
+}
+.detail {
+    text-align: left;
+}
+.table {
+    
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: -5px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;   
+}
+  
+td,
+th {
+    border: 1px solid #3a3b3d;
+    text-align: left;
+    padding: 8px;
+}
+  
+th {
+    background-color: rgb(49, 4, 1);
+    color: rgb(253, 250, 211);
+}
+  
+tr:nth-child(even) {
+    background-color: rgb(220, 20, 20);
+    color: white;
+}
+tr:nth-child(odd) {
+    background-color: rgb(230, 225, 225);
+    color: rgb(41, 40, 40);
+}
