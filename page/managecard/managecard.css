@@ -1,0 +1,72 @@
+.managecard {    
+    background-color: rgb(88, 1, 1);
+    color: rgb(235, 233, 233);
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+    
+}
+
+.container-manage {
+    border: 1px solid rgb(255, 196, 0);
+    width: 30%;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-manage button {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#containermanage1 {
+    border: 1px solid rgb(255, 196, 0);
+    width: 30%;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#containermanage1 button {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#containermanage2 {
+    border: 1px solid rgb(255, 196, 0);
+    width: 30%;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#containermanage2 button {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.editMember {
+    padding-bottom: 50px;
+}
+
+.editMember button {
+    width: 30%;
+    border: 1px solid yellow;
+    height: 40px;
+    background-color: rgb(220, 20, 20);
+    color: white;
+}
+
+.deleteMember {
+    padding-bottom: 50px;
+}
+
+.deleteMember button {
+    width: 30%;
+    border: 1px solid yellow;
+    height: 40px;
+    background-color: rgb(220, 20, 20);
+    color: white;
+}
+/* .hide-page {
+    display: none;
+} */

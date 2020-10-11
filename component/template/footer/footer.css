@@ -1,0 +1,9 @@
+.footer {
+    background-color: rgb(20, 20, 20);
+    color: cornsilk;
+    height: 40px;
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: -10px;
+    padding-top: 1px;
+}
