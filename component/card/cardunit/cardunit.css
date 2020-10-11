@@ -1,0 +1,24 @@
+.cardunit {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;    
+    display: flex;
+    justify-content: space-around;    
+}
+
+.unitcard {
+    width: 30%;
+}
+  
+.unitcard:hover {
+    box-shadow: 0 15px 20px 0 rgba(0,0,0,0.2);
+}
+  
+.unitcard img {       
+    width: 100%;    
+}
+  
+.container-card {
+    padding: 2px 16px;
+    text-align: center;
+    padding-bottom: 10px;
+}

@@ -1,0 +1,27 @@
+.register {    
+    background-color: rgb(88, 1, 1);
+    color: rgb(235, 233, 233);
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.form {
+    border: 1px solid white;
+    margin: 0 auto;
+    width: 20%;
+    padding-left: 90px;
+    
+}
+
+.register button {
+    background-color: rgb(220, 20, 20);
+    height: 30px;
+    width: 60%;
+    color: white;
+    
+}
+
+.form h3 {
+    text-align: center;
+    padding-right: 90px;
+}
